@@ -13,124 +13,106 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="icon" href="media/logo.png">
 
+        <link rel="shortcut icon" href="media/logo.png" />
         <title>TipEASE</title>
     </head>
 
-    <body class="bg-dark">
-        <nav class="navbar navbar-light navbar-1 snappy bg-warning" role="navigation"><!-- Navigation -->
+    <body class="fullscreen-bg"><!-- BODY -->
 
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">TipEASE</a>
-            
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
-                    class="fas fa-bars fa-1x"></i></span></button>
-            
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <!-- VIDEO BACKGROUND -->
+        <video autoplay muted loop class="fullscreen-bg-video" id="videoBG">
+            <source src="media/stockVidBg.mp4" type="video/mp4">
+        </video>
+
+            <nav class="navbar navbar-light" role="navigation"><!-- NAVIGATION -->
+
+                <!-- NAVBAR BRAND -->
+                <a class="navbar-brand" href="#"><img src="media/logo.png" id="navLogo"> TipEASE</a>
                 
-                <!-- List -->
-                <ul class="navbar-nav mr-auto">
-            
-                    <li class="nav-item active">
-                        <a class="nav-link" href="home">Home</a>
-                    </li>
-            
-                    <li class="nav-item active">
-                        <a class="nav-link" href="what">What?</a>
-                    </li>
-            
-                    <li class="nav-item active">
-                        <a class="nav-link" href="how">How?</a>
-                    </li>
-            
-                    <li class="nav-item active">
-                        <a class="nav-link" href="who">Who?</a>
-                    </li>
-            
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact">Contact Us</a>
-                    </li>
-            
-                </ul>
+                <!-- NAVBAR TOGGLER -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDrop"
+                    aria-controls="navbarDrop" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
+                        class="fas fa-bars fa-1x"></i></span></button>
                 
-            </div>
-        
-        </nav>
+                <!-- COLLAPSIBLE DIV -->
+                <div class="collapse navbar-collapse" id="navbarDrop">
+                    
+                    <!-- LIST -->
+                    <ul class="navbar-nav mr-auto">
+                
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home">Home</a>
+                        </li>
+                
+                        <li class="nav-item active">
+                            <a class="nav-link" href="what">What?</a>
+                        </li>
+                
+                        <li class="nav-item active">
+                            <a class="nav-link" href="how">How?</a>
+                        </li>
+                
+                        <li class="nav-item active">
+                            <a class="nav-link" href="who">Who?</a>
+                        </li>
+                
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact">Contact Us</a>
+                        </li>
+                
+                    </ul>
+                    
+                </div>
+            
+            </nav><!-- NAVIGATION -->
 
-        <header class="snappy" id="home"><!-- Header -->
+            <section class="container-fluid pre-scrollable">
 
-            <!-- Overlay -->
-            <div class="overlay"></div>
-
-            <!-- Video BG -->
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="media/stockVidBg.mp4" type="video/mp4">
-            </video>
-
-            <!-- Container -->
-            <div class="container vh-100">
-                <div class="d-flex vh-100 text-center align-items-center">
-                    <div class="w-100 text-white">
-                        <h1 class="display-3">TipEASE</h1>
-                        <p class="lead mb-0">Leave A Tip!</p>
+                <div class="container-fluid">
+                    <div class="card w-50">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title"><a>Card title</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Button</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </header>
-
-        <!-- SECTIONS -->
-
-        <section class="vh-100 snappy bg-danger" id="what"><!-- What is TipEASE? -->
-            <div class="container">
-                <div class="d-flex text-center align-items-center">
-                    <div class="w-100">
-                        <h1 class="display-3">What?</h1>
-                        <p class="lead mb-0">What Is TipEASE?</p>
+                <div class="card w-25">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Card title</a></h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Button</a>
                     </div>
                 </div>
-            </div>
-        </section>
-    
-        <section class="vh-100 snappy bg-primary" id="how"><!-- How does TipEASE work? -->
-            <div class="container">
-                <div class="d-flex vh-100 text-center align-items-center">
-                    <div class="w-100">
-                        <h1 class="display-3">How?</h1>
-                        <p class="lead mb-0">How Does TipEASE?</p>
+
+                <div class="card w-25">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title"><a>Card title</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Button</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    
-        <section class="vh-100 snappy bg-info" id="who"><!-- Who is TipEase for? -->
-            <div class="container">
-                <div class="d-flex vh-100 text-center align-items-center">
-                <div class="w-100">
-                    <h1 class="display-3">Who?</h1>
-                    <p class="lead mb-0">Who Is TipEASE For?</p>
-                </div>
-                </div>
-            </div>
-        </section>
-    
-        <section class="vh-100 snappy bg-success" id="contact"><!-- Contact -->
-            <div class="container">
-                <div class="d-flex vh-100 text-center align-items-center">
-                    <div class="w-100">
-                        <h1 class="display-3">Contact Us</h1>
-                        <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sed nam maiores facere sint eaque autem</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <footer class="vh-20 snappy bg-warning"><!-- Footer -->
-            <h1 class="display-3">Footer</h1>
-            <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </footer>
+
+                    <div class="card w-25">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+            </section>
+
+        <!-- What is TipEASE?
+        TipEASE is a user friendly web application that aids service workers in collecting tips from appreciating customers.
+
+        Service workers are commonly faced with not being granted or having to share their hard earned tips by their employers.
+
+        TipEASE strives to  bar these unfortunate practices. -->
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -139,3 +121,5 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
 
     </body>
+
+</html>

@@ -1,57 +1,92 @@
-/* TEST TEST TEST */
+                /* ==================== */
+/*====================TEST TEST TEST====================*/
+.card {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+/*====================Universals====================*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+/* ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+} */
 
-/* Universals */
-body {
-    scroll-snap-type: y mandatory;
-    scroll-snap-stop: always;
-}
-body .snappy {
-    scroll-snap-align: end;
-}
-/* Navigation */
-.navbar.navbar-1 .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
-}
-/* Header */
-header {
-    position: relative;
-    background-color: black;
-    height: 100vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-}
 
-header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-header .container {
-    position: relative;
-    z-index: 2;
-}
-header .overlay {
+/*====================Body====================*/
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+}/* Body Background */
+.fullscreen-bg-video {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-}
-    @media (pointer: coarse) and (hover: none) {
-        header {
-            background: url('media/stockVidBg.mp4') black no-repeat center center scroll;
+    height: 100%;
+}/* Background Video */
+    @media (min-aspect-ratio: 16/9) {
+        .fullscreen-bg-video {
+        height: 300%;
+        top: -100%;
         }
-    }
+    }/* Aspect Ratio Media Query */
+    
+    @media (max-aspect-ratio: 16/9) {
+        .fullscreen-bg-video {
+        width: 300%;
+        left: -100%;
+        }
+    }/* Aspect Ratio Media Query */
+    @media (max-width: 767px) {
+        .fullscreen-bg {
+        background-color: #30393A;
+        }
+    
+        .fullscreen-bg-video {
+        display: none;
+        }
+    }/* Max-Width Media Query */
+
+/*====================Container Section====================*/
+.container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    max-height: 100%;
+    max-width: 100%;
+}/* Container-Fluid */
+
+/*====================Navigation====================*/
+.navbar {
+    background-color: #A26CCC;
+}/* Navigation Color */
+#navLogo {
+    max-height: 30px;
+    max-width: 30px;
+}/* Navigation Logo */
+.navbar .navbar-toggler{
+    background-color: #30393A;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}/* Navbar Toggler */
+.navbar .navbar-toggler-icon{
+    background-color: #A26CCC; /* Changes toggle color on hover */
+}/* Navbar Toggler Icon */
+
+
+
+/*====================Header====================*/
