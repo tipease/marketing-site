@@ -9,4 +9,4 @@
 ## UI Developer
 
 | [<img src="https://avatars0.githubusercontent.com/u/42873186?s=460&v=4" align="center" width=100><br><b>Brandon Desselle</b> ](https://github.com/BDesselle) |
-|---|
+|-----|
