@@ -29,8 +29,8 @@ and beyond the project.
 - [ ] Phone views look professional at 500px and below and Desktop views look professional at 1000px and above. No horizontal scrollbars exist.
 - [ ] Tablet views look professional at 800px and above. Responsive units are used for font-sizing.   
 - [ ] Objects were created, Array methods were used, code is readable. No errors in the console when opening the web page.
-- [ ] Any of the following were used: .map(), .reduce(), .filter(), .sort(), constructors were used to build new objedects
-- [ ] Event Listeners were used, DOM manipulation occured
+- [ ] Any of the following were used: .map(), .reduce(), .filter(), .sort(), constructors were used to build new objects
+- [ ] Event Listeners were used, DOM manipulation occurred
 - [ ] A reusable component was built.  The component should be able to take any number of elements and continue to work well.  Example: Accordion with any amount of panels.
 
 
