@@ -462,7 +462,7 @@ body {
 		}
 
 		.button.primary {
-			background-color: #63DA00;
+			background-color: #008C17;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -472,7 +472,7 @@ body {
 			}
 
 			.button.primary:active {
-				background-color: #63DA00 !important;
+				background-color: #008C17 !important;
 			}
 
 		.button:disabled {
@@ -730,7 +730,7 @@ body {
 		}
 
 		.wrapper.style1 {
-			background-color: #63DA00;
+			background-color: #008C17;
 			color: #c8ece9;
 		}
 
@@ -775,7 +775,7 @@ body {
 		}
 
 		.wrapper.style3 {
-			background-color: #63DA00;
+			background-color: #008C17;
 			color: #d3d4e4;
 		}
 
@@ -962,7 +962,7 @@ body.is-menu-visible #menu {
 	-webkit-transition: background-color 0.2s ease;
 	-ms-transition: background-color 0.2s ease;
 	transition: background-color 0.2s ease;
-	background: #63DA00;
+	background: #008C17;
 	height: 3em;
 	left: 0;
 	line-height: 3em;
