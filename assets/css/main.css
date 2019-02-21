@@ -899,7 +899,7 @@ body.is-menu-visible #menu {
 		line-height: inherit;
 		position: absolute;
 		top: 0;
-		color: #008C17;
+		color: white;
 	}/* Nav Bar Header Text */
 
 		#header h1 a {
@@ -950,7 +950,7 @@ body.is-menu-visible #menu {
 					#header nav > ul > li > a.menuToggle {
 						outline: 0;
 						position: relative;
-						color: #008C17;
+						color: white;
 					}/* Nav Bar Menu Text */
 
 						#header nav > ul > li > a.menuToggle:after {
@@ -990,7 +990,7 @@ body.is-menu-visible #menu {
 
 	#header.alt {
 		border: none;
-		background: white;
+		background: #008C17;
 	}/* Nav Bar Background */
 
 		#header.alt h1 {
@@ -1013,13 +1013,14 @@ body.is-menu-visible #menu {
 	-ms-justify-content: center;
 	justify-content: center;
 	cursor: default;
+	min-height: 100vh;
 	height: 100vh;
-	min-height: 35em;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
 	background: #161616;
 	justify-content: space-between;
+
 }/* Banner Background */
 
 	#banner h2 {
@@ -1072,8 +1073,15 @@ body.is-menu-visible #menu {
 		text-transform: uppercase;
 	}
 
+	#banner .phone {
+		min-width: 362px;
+		min-height: 303px;
+	}
+
 	#banner .inner {
-		margin-top: 32.3%;
+		margin: auto;
+		max-width: 375px;
+		max-height: 330px;
 	}
 
 	#banner .scrolly {
