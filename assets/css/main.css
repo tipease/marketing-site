@@ -1481,7 +1481,9 @@ body.is-mobile #main > header {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		height: 25.0em;
+		height: 26.45em;
+		padding: .5em;
+		border-bottom: 1px white solid;
 	}
 
 		.spotlight-2 .image {
@@ -1508,6 +1510,7 @@ body.is-mobile #main > header {
 			width: 60%;
 		}
 			.spotlight-2 .content h2 {
+				color: #008C17;
 				text-align: center;
 			}
 		
