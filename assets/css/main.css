@@ -556,198 +556,69 @@ body {
 
 			}
 
-/* Spotlight */
-
-	.spotlight {
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-	}
-
-		.spotlight .image {
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
-			order: 1;
-			border-radius: 0;
-			width: 40%;
-		}
-
-			.spotlight .image img {
-				border-radius: 0;
-				width: 100%;
-			}
-
-		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
-			order: 2;
-			max-width: 48em;
-			width: 60%;
-		}
-
-		.spotlight:nth-child(2n) {
-			-moz-flex-direction: row-reverse;
-			-webkit-flex-direction: row-reverse;
-			-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
-		}
-
-		.spotlight:nth-child(1) {
-			background-color: rgba(48, 57, 58, 0.075);
-		}
-
-		.spotlight:nth-child(2) {
-			background-color: rgba(48, 57, 58, 0.15);
-		}
-
-		.spotlight:nth-child(3) {
-			background-color: rgba(48, 57, 58, 0.225);
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			.spotlight .image {
-				width: 45%;
-			}
-
-			.spotlight .content {
-				width: 55%;
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.spotlight {
-				display: block;
-			}
-
-				.spotlight br {
-					display: none;
-				}
-
-				.spotlight .image {
-					width: 100%;
-				}
-
-				.spotlight .content {
-					padding: 4em 3em 2em 3em ;
-					max-width: none;
-					text-align: center;
-					width: 100%;
-				}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			.spotlight .content {
-				padding: 3em 2em 1em 2em ;
-			}
-
-		}
-
-/* Wrapper */
-
+/*============================== WRAPPER ==============================*/
 	.wrapper {
 		padding: 6em 0 4em 0 ;
 	}
-
 		.wrapper > .inner {
 			width: 60em;
 			margin: 0 auto;
 		}
-
 			@media screen and (max-width: 1280px) {
-
 				.wrapper > .inner {
 					width: 90%;
 				}
-
 			}
-
 			@media screen and (max-width: 980px) {
-
 				.wrapper > .inner {
 					width: 100%;
 				}
-
 			}
-
 		.wrapper.alt {
 			padding: 0;
 		}
-
 		.wrapper.style1 {
 			background-color: #008C17;
 		}/* Top Content Background */
-
 			.wrapper.style1 h2 {
 				color: white;
 			}/* Top Content Heading */
-
 			.wrapper.style1 header.major h2 {
 				border-color: white;
 			}/* Top Content Text Divider */
-
 			.wrapper.style1 header.major p {
 				color: white;
 			}/* Top Content P Color */
-
 			.wrapper.style1 .icon.major {
 				border-color: white;
 			}/* Top Content Icon Borders */
-
-		.wrapper.style2 {
-			background-color: #161616;
-		}/* Mid Content Background */
-
+		
 		.wrapper.style3 {
 			background-color: #008C17;
 			color: white;
 		}/* Bottom Content Text & Background */
-
 			.wrapper.style3 h2, .wrapper.style3 h3 {
 				color: white;
 			}/* Bottom Content Small Headers */
-
 			.wrapper.style3 header.major p {
 				color: white;
 			}/* Bottom Content Main P Color */
-
 			@media screen and (max-width: 736px) {
-
 				.wrapper.style3 .features li {
 					border-top-color: white;
 				}/* Bottom Content Mobile Dividers */
-
 			}
-
 		@media screen and (max-width: 980px) {
-
 			.wrapper {
 				padding: 4em 3em 2em 3em ;
 			}
-
 		}
-
 		@media screen and (max-width: 736px) {
-
 			.wrapper {
 				padding: 3em 2em 1em 2em ;
 			}
-
 		}
-
-/* Page Wrapper + Menu */
+/*============================== WRAPPER ==============================*/
 
 #page-wrapper {
 	-moz-transition: opacity 0.5s ease;
@@ -1363,131 +1234,343 @@ body.is-mobile #main > header {
 			}
 
 		}
+/*============================== WRAPPER CONTAINER ==============================*/
+/*============================== WRAPPER CONTAINER ==============================*/
+/*============================== HEADER / NAVIGATION ==============================*/
+/*============================== HEADER / NAVIGATION ==============================*/
+/*============================== BANNER ==============================*/
+/*============================== BANNER ==============================*/
+/*============================== TOP CONTENT ==============================*/
+/*============================== TOP CONTENT ==============================*/
 
-/* Mid Content Images */
-.spotlight {
-	height: 25.0em;
-}
-.spotlight .content p {
-	font-size: 1.20em;
-}
-#loopy {
-	height: 25.0em;
-	position: relative;
-}
-#loopy img {
-	height: 100%;
-	position: absolute;
-}
+/*============================== MID CONTENT ==============================*/
+	.wrapper.style2 {
+		background-color: #161616;
+	}
+	.spotlight {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		height: 25.0em;
+	}
+
+		.spotlight #loopy {
+			height: 25.0em;
+			position: relative;
+		}
+
+			.spotlight #loopy img {
+				height: 100%;
+				position: absolute;
+			}
+
+		.spotlight .image {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			border-radius: 0;
+			width: 40%;
+		}
+
+			.spotlight .image img {
+				border-radius: 0;
+				width: 100%;
+			}
+
+		.spotlight .content {
+			padding: 2em 4em 0.1em 4em ;
+			-moz-order: 2;
+			-webkit-order: 2;
+			-ms-order: 2;
+			order: 2;
+			max-width: 48em;
+			width: 60%;
+		}
+
+			.spotlight .content p {
+				font-size: 1.20em;
+			}
+
+		.spotlight:nth-child(2n) {
+			-moz-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+		.spotlight:nth-child(1) {
+			background-color: rgba(48, 57, 58, 0.075);
+		}
+		.spotlight:nth-child(2) {
+			background-color: rgba(48, 57, 58, 0.15);
+		}
+		.spotlight:nth-child(3) {
+			background-color: rgba(48, 57, 58, 0.225);
+		}
+
+		@media screen and (max-width: 1280px) {
+			.spotlight .image {
+				width: 45%;
+			}
+			.spotlight .content {
+				width: 55%;
+			}
+		}
+
+		@media screen and (max-width: 980px) {
+			.spotlight {
+				display: block;
+			}
+				.spotlight br {
+					display: none;
+				}
+				.spotlight .image {
+					width: 100%;
+				}
+				.spotlight .content {
+					padding: 4em 3em 2em 3em ;
+					max-width: none;
+					text-align: center;
+					width: 100%;
+				}
+		}
+
+		@media screen and (max-width: 736px) {
+			.spotlight .content {
+				padding: 3em 2em 1em 2em ;
+			}
+		}
+
 	
-@-webkit-keyframes imgFade {
-	0% {
-		opacity: 1;
-	}
-	17% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 0;
-	}
-	92% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-	
-@-moz-keyframes imgFade {
-	0% {
-		opacity: 1;
-	}
-	17% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 0;
-	}
-	92% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-	
-@-o-keyframes imgFade {
-	0% {
-		opacity: 1;
-	}
-	17% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 0;
-	}
-	92% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
 
-@keyframes imgFade {
-	0% {
-		opacity: 1;
+	/* Keyframes */
+	@-webkit-keyframes imgFade {
+		0% {
+			opacity:1;
+		}
+		17% {
+			opacity:1;
+		}
+		25% {
+			opacity:0;
+		}
+		92% {
+			opacity:0;
+		}
+		100% {
+			opacity:1;
+		}
+	}	
+	@-moz-keyframes imgFade {
+		0% {
+			opacity:1;
+		}
+		17% {
+			opacity:1;
+		}
+		25% {
+			opacity:0;
+		}
+		92% {
+			opacity:0;
+		}
+		100% {
+			opacity:1;
+		}
+	}	
+	@-o-keyframes imgFade {
+		0% {
+			opacity:1;
+		}
+		17% {
+			opacity:1;
+		}
+		25% {
+			opacity:0;
+		}
+		92% {
+			opacity:0;
+		}
+		100% {
+			opacity:1;
+		}
 	}
-	17% {
-		opacity: 1;
+	@keyframes imgFade {
+		0% {
+			opacity:1;
+		}
+		17% {
+			opacity:1;
+		}
+		25% {
+			opacity:0;
+		}
+		92% {
+			opacity:0;
+		}
+		100% {
+			opacity:1;
+		}
 	}
-	25% {
-		opacity: 0;
-	}
-	92% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-	
-#loopy img {
-	-webkit-animation-name: imgFade;
-	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-duration: 9s;
 
-	-moz-animation-name: imgFade;
-	-moz-animation-timing-function: ease-in-out;
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-duration: 9s;
+	/* Animations */
+	#loopy img {
+		-webkit-animation-name: imgFade;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-duration: 15s;
 
-	-o-animation-name: imgFade;
-	-o-animation-timing-function: ease-in-out;
-	-o-animation-iteration-count: infinite;
-	-o-animation-duration: 9s;
+		-moz-animation-name: imgFade;
+		-moz-animation-timing-function: ease-in-out;
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-duration: 15s;
 
-	animation-name: imgFade;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-duration: 9s;
-}
-#loopy img:nth-of-type(1) {
-	-webkit-animation-delay: 9s;
-	-moz-animation-delay: 9s;
-	-o-animation-delay: 9s;
-	animation-delay: 9s;
-}
-#loopy img:nth-of-type(2) {
-	-webkit-animation-delay: 6s;
-	-moz-animation-delay: 6s;
-	-o-animation-delay: 6s;
-	animation-delay: 6s;
-}
-#loopy img:nth-of-type(3) {
-	-webkit-animation-delay: 3s;
-	-moz-animation-delay: 3s;
-	-o-animation-delay: 3s;
-	animation-delay: 3s;
-}
+		-o-animation-name: imgFade;
+		-o-animation-timing-function: ease-in-out;
+		-o-animation-iteration-count: infinite;
+		-o-animation-duration: 15s;
+
+		animation-name: imgFade;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+	}
+	#loopy img:nth-of-type(1) {
+		-webkit-animation-delay: 10s;
+		-moz-animation-delay: 10s;
+		-o-animation-delay: 10s;
+		animation-delay: 10s;
+	}
+	#loopy img:nth-of-type(2) {
+		-webkit-animation-delay: 5s;
+		-moz-animation-delay: 5s;
+		-o-animation-delay: 5s;
+		animation-delay: 5s;
+	}
+	#loopy img:nth-of-type(3) {
+		-webkit-animation-delay: 0s;
+		-moz-animation-delay: 0s;
+		-o-animation-delay: 0s;
+		animation-delay: 0s;
+	}
+/*============================== MID CONTENT ==============================*/
+
+/*============================== BOTTOM CONTENT ==============================*/
+/*============================== BOTTOM CONTENT ==============================*/
+/*============================== FOOTER ==============================*/
+/*============================== FOOTER ==============================*/
+
+/*============================== ABOUT ==============================*/
+	#about {
+		height: 100vh;
+	}
+	.wrapper.style2 {
+			background-color: #161616;
+	}
+	.spotlight-2 {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		height: 25.0em;
+	}
+
+		.spotlight-2 .image {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			border-radius: 0;
+			width: 40%;
+		}
+
+			.spotlight-2 .image img {
+				border-radius: 0;
+				width: 100%;
+			}
+
+		.spotlight-2 .content {
+			padding: 2em 4em 0.1em 4em ;
+			-moz-order: 2;
+			-webkit-order: 2;
+			-ms-order: 2;
+			order: 2;
+			max-width: 48em;
+			width: 60%;
+		}
+			.spotlight-2 .content h2 {
+				text-align: center;
+			}
+		
+		.spotlight-2 .content .icons {
+			font-size: 3.5em;
+			text-align: center;
+			padding: .5em;
+		}
+
+			.spotlight-2 .content .icons a {
+				color: white;
+			}/* Footer Icon Color */
+
+				.spotlight-2 .content .icons a:hover {
+					color: #008C17;
+				}/* Footer Icon Color Hover */
+
+		.spotlight-2:nth-child(2n) {
+			-moz-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+		.spotlight-2:nth-child(1) {
+			background-color: #161616;
+		}
+		.spotlight-2:nth-child(2) {
+			background-color: #161616;
+		}
+		.spotlight-2:nth-child(3) {
+			background-color: #161616;
+		}
+
+		@media screen and (max-width: 1280px) {
+			.spotlight-2 .image {
+				width: 45%;
+			}
+			.spotlight-2 .content {
+				width: 55%;
+			}
+		}
+
+		@media screen and (max-width: 980px) {
+			.spotlight-2 {
+				display: block;
+			}
+				.spotlight-2 br {
+					display: none;
+				}
+				.spotlight-2 .image {
+					width: 100%;
+				}
+				.spotlight-2 .content {
+					padding: 4em 3em 2em 3em ;
+					max-width: none;
+					text-align: center;
+					width: 100%;
+				}
+		}
+
+		@media screen and (max-width: 736px) {
+			.spotlight-2 .content {
+				padding: 3em 2em 1em 2em ;
+			}
+		}
+/*============================== ABOUT ==============================*/
