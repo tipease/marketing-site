@@ -22,7 +22,7 @@ The main issue that TipEase aims to resolve is the fact that there is a large ma
 
 # Live Deployment
 
-`#`
+https://tipease.netlify.com/
 
 # Report Bugs, Commit, and Pull Requests.
 
