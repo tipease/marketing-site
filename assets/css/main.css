@@ -1,7 +1,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
-html, body, div, span, h1, h2, h3, p, a, img, ul, li, footer, header, nav, section {
+html, body, div, span, h1, h2, h3, p, a, img, ul, li, footer, header, nav, section label {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -430,6 +430,10 @@ ul.icons {
 		}
 
 	}
+
+#disclaimer {
+	opacity: .2;
+}
 /*============================== MISC. ==============================*/
 
 /*============================== WRAPPER ==============================*/
@@ -621,7 +625,7 @@ ul.icons {
 /*============================== WRAPPER CONTAINER ==============================*/
 
 /*============================== HEADER / NAVIGATION ==============================*/
-{#header
+#header {
 	-moz-transition: background-color .01s ease;
 	-webkit-transition: background-color .01s ease;
 	-ms-transition: background-color .01s ease;
@@ -830,8 +834,7 @@ ul.actions {
 	-ms-justify-content: center;
 	justify-content: center;
 	cursor: default;
-	min-height: 100vh;
-	height: 100vh;
+	height: 1280px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -896,9 +899,18 @@ ul.actions {
 	}
 
 	#banner .inner {
-		margin: auto;
+		margin: 0 auto;
 		max-width: 375px;
 		max-height: 330px;
+	}
+
+	#banner .logo {
+		height: 15.625em;
+		width: 15.625em;
+		padding: 1.75em;
+		margin: 0 auto;
+		margin-top: 20.3125em;
+		display: flex;
 	}
 
 	#banner .scrolly {
@@ -938,10 +950,14 @@ ul.actions {
 
 		#banner {
 			padding: 7em 3em 5em 3em ;
-			height: auto;
+			height: 100vh;
 			min-height: 0;
 			background-color: #161616;
 		}/* Banner Background Mobile */
+
+			#banner .logo {
+				margin-top: 0em;
+			}
 
 			#banner h2 {
 				font-size: 1.25em;
@@ -958,7 +974,17 @@ ul.actions {
 			a img {
 				display: none;
 			}
+	}
 
+	@media screen and (max-width: 480px) {
+		#banner {
+			height: 100vh;
+		}
+			#banner .logo {
+				margin-top: 0em;
+			}
+
+		
 	}
 
 body.is-preload #banner h2 {
@@ -1070,25 +1096,43 @@ body.is-preload #banner:after {
 
 		@media screen and (max-width: 980px) {
 			.spotlight {
-				display: block;
+				display: flex;
 			}
 				.spotlight br {
 					display: none;
 				}
 				.spotlight .image {
-					width: 100%;
+					/* width: 100%; */
+					display: none;
 				}
 				.spotlight .content {
 					padding: 4em 3em 2em 3em ;
 					max-width: none;
 					text-align: center;
 					width: 100%;
+					display: flex;
+					flex-direction: column;
 				}
 		}
 
 		@media screen and (max-width: 736px) {
+			.spotlight {
+				display: flex;
+			}
 			.spotlight .content {
+				display: flex;
+				flex-direction: column;
 				padding: 3em 2em 1em 2em ;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.spotlight {
+				display: flex;
+			}
+			.spotlight .content {
+				display: flex;
+				flex-direction: column;
 			}
 		}
 
@@ -1544,7 +1588,7 @@ body.is-mobile #main > header {
 
 		@media screen and (max-width: 980px) {
 			.spotlight-2 {
-				display: block;
+				display: flex;
 			}
 				.spotlight-2 br {
 					display: none;
@@ -1553,10 +1597,19 @@ body.is-mobile #main > header {
 					width: 100%;
 				}
 				.spotlight-2 .content {
+					display: flex;
+					flex-direction: column;
 					padding: 4em 3em 2em 3em ;
 					max-width: none;
 					text-align: center;
 					width: 100%;
+				}
+					.spotlight-2 .content h2 a {
+						display: none;
+					}
+				.spotlight-2 .icons {
+					display: flex;
+					align-self: center;
 				}
 		}
 
@@ -1565,4 +1618,117 @@ body.is-mobile #main > header {
 				padding: 3em 2em 1em 2em ;
 			}
 		}
+
+		@media screen and (max-width: 480px) {
+			#about {
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+			}
+
+				.spotlight-2 {
+					min-height: 100vh;
+					/* padding: .5em; */
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+
+					.spotlight-2 .image {
+						display: flex;
+						padding: .5em;
+						justify-content: center;
+					}
+
+						.spotlight-2 .image img {
+							display: flex;
+							width: 25em;
+							height: 18.3em;
+						}
+
+					.spotlight .content {
+						display: flex;
+					}
+
+						.spotlight-2 .content h2 {
+						}
+
+						.spotlight-2 .content .icons {
+						}
+
+
+				.spotlight-2:nth-child(2n) {
+					flex-direction: column;
+				}
+		}
 /*============================== ABOUT ==============================*/
+
+/*============================== CONTACT ==============================*/
+#contact {
+	height: 100vh;
+	background-color: #161616;
+}
+	#contact .cont {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+		#contact .cont form {
+			align-content: center;
+			display: flex;
+			flex-direction: column;
+			width: 31.5625em;
+		}
+			#contact .cont form .nl {
+				margin: 1em;
+				color: #008C17;
+				font-size: 1.5em;
+				text-align: center;
+			}
+			#contact .cont form .ni {
+				text-align: center;
+				font-size: 1.5em;
+				border-radius: 0.9375em;
+				background-color: rgba(112, 112, 112, 0.250);
+				border: none;
+				color: white;
+			}
+
+			#contact .cont form .el {
+				margin: 1em;
+				color: #008C17;
+				font-size: 1.5em;
+				text-align: center;
+			}
+			#contact .cont form .ei {
+				text-align: center;
+				font-size: 1.5em;
+				border-radius: 0.9375em;
+				background-color: rgba(112, 112, 112, 0.250);
+				border: none;
+				color: white;
+			}
+
+			#contact .cont form .ml {
+				margin: 1em;
+				color: #008C17;
+				font-size: 1.5em;
+				text-align: center;
+			}
+			#contact .cont form .mi {
+				border-radius: 0.9375em;
+				font-size: 1.5em;
+				background-color: rgba(112, 112, 112, 0.250);
+				border: none;
+				color: white;
+			}
+
+			#contact .cont form .fb {
+				margin: 1em 6.25em;
+				border-radius: 0.9375em;
+				height: 2.5em;
+				font-size: 1.5em;
+				background-color: #008C17;
+				border: none;
+			}
+/*============================== CONTACT ==============================*/
