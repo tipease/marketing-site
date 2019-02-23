@@ -11,11 +11,19 @@
 | [<img src="https://avatars0.githubusercontent.com/u/42873186?s=460&v=4" align="center" width=100><br><b>Brandon Desselle</b> ](https://github.com/BDesselle) |
 |-----|
 
-<!-- 1. What is your app.
-2. What problem is it trying to solve or motivation for creating the app.
-3. How would someone install the app.
-4. How would someone run the app
-5. General Contributors (not really needed)
-6. How can someone report a bug or commit a pull request.
-7. What is the link for the live deployment of your app?
-8. Where can someone find the templates for pull requests and bug reports. -->
+
+# What is TipEase?
+
+TipEase is a application that provides a quick, easy, and supporting way to tip local service   workers of man fields.
+
+# What problem does TipEase aim to resolve?
+
+The main issue that TipEase aims to resolve is the fact that there is a large majority of service workers who are required to share their tips with employers, or not recieve their earned tips at all. TipEase also provides customers quick and easy means of tipping their service providers.
+
+# Live Deployment
+
+`#`
+
+# Report Bugs, Commit, and Pull Requests.
+
+This is not an open source project, do not attempt to make any pull-requests or commits
