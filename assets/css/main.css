@@ -834,8 +834,7 @@ ul.actions {
 	-ms-justify-content: center;
 	justify-content: center;
 	cursor: default;
-	min-height: 100vh;
-	height: 100vh;
+	height: 1280px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -910,6 +909,7 @@ ul.actions {
 		width: 15.625em;
 		padding: 1.75em;
 		margin: 0 auto;
+		margin-top: 20.3125em;
 		display: flex;
 	}
 
@@ -950,10 +950,14 @@ ul.actions {
 
 		#banner {
 			padding: 7em 3em 5em 3em ;
-			height: auto;
+			height: 100vh;
 			min-height: 0;
 			background-color: #161616;
 		}/* Banner Background Mobile */
+
+			#banner .logo {
+				margin-top: 0em;
+			}
 
 			#banner h2 {
 				font-size: 1.25em;
@@ -976,6 +980,9 @@ ul.actions {
 		#banner {
 			height: 100vh;
 		}
+			#banner .logo {
+				margin-top: 0em;
+			}
 
 		
 	}
